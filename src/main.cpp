@@ -1,33 +1,12 @@
-#include <iostream>
-#include <cmath>
-
 #include "SDL2/SDL.h"
-#include "SDL2/SDL_ttf.h"
 
 using namespace std;
-
 
 int width = 700;
 int height = 700;
 
 SDL_Window    *window;
 SDL_Renderer *renderer;
-
-constexpr double pi()
-{
-    return std::atan(1) * 4;
-}
-
-struct Vector2d
-{
-    float x;
-    float y;
-    void add(Vector2d v2)
-    {
-        this->x += v2.x;
-        this->y += v2.y;
-    }
-};
 
 void scene_clear()
 {
@@ -54,7 +33,6 @@ void setup()
 int main(int argc, char *argv[])
 {
     setup();
-
 
     scene_clear();
     double x, y, x0, y0, xtemp;
