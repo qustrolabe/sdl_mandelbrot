@@ -31,7 +31,6 @@ struct Vector2d
 
 void scene_clear()
 {
-    // SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
     SDL_SetRenderDrawColor(renderer, 100, 100, 100, 255);
     SDL_RenderClear(renderer);
 }
@@ -105,12 +104,6 @@ int main(int argc, char *argv[])
     while (mainLoop)
     {
         // scene_clear();
-
-        //
-
-
-
-        //
 
         // SDL_RenderPresent(renderer);
 
