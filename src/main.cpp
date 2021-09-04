@@ -1,3 +1,4 @@
+#include <iostream>
 #include "SDL2/SDL.h"
 
 using namespace std;
@@ -58,16 +59,8 @@ int main(int argc, char *argv[])
                 iteration++;
             }
 
-            if(iteration > 500)
-            {
-                brightness = 255;
-            }
-            else
-            {
-                brightness = 0;
-            }
 
-            brightness = 255.0 * (double) iteration / max_iterations;
+            brightness = 255.0 * (double) iteration / 50;
 
 
 
